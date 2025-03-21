@@ -2017,8 +2017,8 @@ program_lm_results <- expand.grid(program = programs, variable = vars) %>%
     
     list(program = p, variable = v, model = summary(model))
   })
-program_lm_results[3:7]
-program_lm_results
+# program_lm_results[3:7]
+# program_lm_results
 
 results_df <- map_dfr(program_lm_results, function(res) {
   tidy_model <- broom::tidy(res$model) %>%
@@ -2034,6 +2034,7 @@ results_df <- map_dfr(program_lm_results, function(res) {
 
 write_xlsx(results_df, "program_lm_results.xlsx")
 
+# back taxes
 
 #
 #### Compare Green Acres and Ag. Preserve parcels that left programs Vs those that retain enrollment. #####
