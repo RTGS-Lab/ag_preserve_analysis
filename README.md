@@ -13,9 +13,8 @@ Data Sources
 
  Key Scripts
 
-Assessor_data.R
-	•	Reads and combines yearly .xlsx and .txt files with consistent column formats.
- 
+Assessor_data.R 
+	•	Reads and combines yearly .xlsx and .txt files with consistent column formats. 
 	•	Merges program participation data (PROGRAM) with the main parcel dataset.
  
 	•	Standardizes program codes into binary indicators:
