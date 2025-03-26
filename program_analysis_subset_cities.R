@@ -1649,6 +1649,7 @@ summary(lm(log(REAL_CITY_TAX_DOLLAR+1)~  share_in_program + super_property_type 
 summary(lm(log(REAL_CITY_TAX_DOLLAR+1) ~ ag_preserv_acres_prop+ super_property_type + as.factor(CTU_NAME)+ as.factor(year), data = filter(parcels_with_city_share,G_Green_Acres == 0 | AG_PRESERVE == 0 | R_Rural_Preserve == 0)))
 summary(lm(log(REAL_CITY_TAX_DOLLAR+1) ~ green_acres_acres_prop + super_property_type+ as.factor(CTU_NAME)+ as.factor(year), data = filter(parcels_with_city_share,G_Green_Acres == 0 | AG_PRESERVE == 0 | R_Rural_Preserve == 0)))
 summary(lm(log(REAL_CITY_TAX_DOLLAR+1) ~ rural_preserv_acres_prop + super_property_type+ as.factor(CTU_NAME)+ as.factor(year), data = filter(parcels_with_city_share,G_Green_Acres == 0 | AG_PRESERVE == 0 | R_Rural_Preserve == 0)))
+summary(lm(log(REAL_CITY_TAX_DOLLAR+1) ~ rural_preserv_acres_prop + super_property_type+ as.factor(CTU_NAME)+ as.factor(year), data = filter(parcels_with_city_share,G_Green_Acres == 0 | AG_PRESERVE == 0 | R_Rural_Preserve == 0)))
 
 
 summary(lm(log(REAL_CITY_TAX_DOLLAR+1)~ share_in_program+ LNTC_CITY_SHARE + I(LNTC_CITY_SHARE^2)+log(ESTIMATED_MARKET_VALUE+1) + log(ACREAGE+1) +as.factor(HOMESTEAD)+ log(SALE_PRICE+1) + as.factor(CTU_NAME) + as.factor(year)*share_in_program+as.factor(SCHOOL_ID), data = subset(parcels_with_city_share,super_property_type == "agricultural_farm")))
