@@ -3,9 +3,13 @@ Agricultural Preservation Program Analysis
 This repository contains code and data processing scripts for analyzing the impacts of agricultural preservation programs across selected cities in Hennepin County. The analysis focuses on evaluating program enrollment and property tax/value outcomes using assessor data and program participation records. The workflow is structured to ensure clean, replicable data pipelines and reproducible research outputs.
 
 Data Sources
+
 	•	Annual Assessor Data (2005–2022): Parcel-level property and tax assessment data
+ 
 	•	Ken’s Linked Text Files: Program enrollment, city LNTC tax rates, and parcel sales
+ 
 	•	CPI Deflator: Used to convert nominal values into real dollars
+ 
 	•	Parcel Geometry (optional): For spatial joins and shapefile outputs
 
 Key Scripts
