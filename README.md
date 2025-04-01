@@ -48,6 +48,8 @@ program_analysis_subset_cities.R
 		•	Real and nominal city taxes
   
 		•	Parcel and acreage counts by program type
+
+ag_preserve_visualization.R
   
 	•	Implements facet-wrapped visualizations of program effects across:
  
@@ -56,6 +58,8 @@ program_analysis_subset_cities.R
 		•	Super property types (residential, commercial, etc.)
   
 		•	Program types (AG_PRESERVE, G_Green_Acres, R_Rural_Preserve)
+
+ag_preserve_models.R
   
 	•	Performs OLS regressions to estimate the relationship between:
  
@@ -82,11 +86,16 @@ Run the scripts in order:
 	2.	Main.R: loads additional data and preps data from assessors_data.R
  
  	3.	program_analysis_subset_cities.R: Subsets and analyzes program effects
+
+  	4. 	ag_preserve_visualization.R: if interested but not required.
+
+   	5. 	ag_preserve_models.R: produces the models specific to the ag preservation programs.
  
 
 Plots and model summaries are saved or printed inline.
 
 Notes
+
 	•	Subrecord-level PIDs are handled with PID_SUBRECORD
 	•	Cities with high-density development (e.g., Minneapolis, Bloomington) are excluded from some analyses
 	•	Time trends and property-type interactions are included in linear models to control for heterogeneity
