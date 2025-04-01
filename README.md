@@ -79,7 +79,9 @@ Run the scripts in order:
 
 	1.	Assessor_data.R: Prepares, cleans, and merges data
  
-	2.	program_analysis_subset_cities.R: Subsets and analyzes program effects
+	2.	Main.R: loads additional data and preps data from assessors_data.R
+ 
+ 	3.	program_analysis_subset_cities.R: Subsets and analyzes program effects
  
 
 Plots and model summaries are saved or printed inline.
