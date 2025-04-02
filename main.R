@@ -8,11 +8,11 @@ library(data.table)
 
 # ---- Load and Prepare Geographic Reference Data ----
 # 'hennepin_cities' is used later to map CITY_ID to city names (CTU_NAME)
-hennepin_cities <- fread("/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/data/ken_data/Hennepin Cities(Report).csv")[, 1:2]
+hennepin_cities <- fread("data/Hennepin Cities(Report).csv")[, 1:2]
 
 # 'hennepin_city_geometries' provides spatial data for Hennepin County boundaries used in mapping/analysis.
 hennepin_city_geometries <- st_read(
-  "/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/gpkg_bdry_census2010counties_ctus/bdry_census2010counties_ctus.gpkg",
+  "data/gpkg_bdry_census2010counties_ctus/bdry_census2010counties_ctus.gpkg",
   layer = 'Census2010CountiesAndCTUs'
 )
 hennepin_city_geometries <- subset(hennepin_city_geometries, CO_NAME == "Hennepin")
@@ -94,7 +94,7 @@ beep()
 #ben_zonation <- st_read("/Users/matthewhockert/Downloads/full_parcels_ranked_final_v1")
 
 # 'cpi' is used for inflation adjustments in financial calculations (e.g., deflating tax or property values).
-cpi <- read_excel("/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/cpi.xlsx")
+cpi <- read_excel("data/cpi.xlsx")
 
 # ---- Clean Up Environment ----
 # Remove temporary objects to free memory.
