@@ -9,25 +9,25 @@ library(data.table)
 # ---- Load Ken Data Files for Conservation Easements ----
 # 'combined_data_frame' is Ken's main conservation easement dataset used for further analysis.
 combined_data_frame <- fread(
-  "/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/data/ken_data/Conservation Easment Data V4 Main All Years.txt",
+  "data/Conservation Easment Data V4 Main All Years.txt",
   sep = "\t", header = FALSE
 )
 
 # 'program_links' provides program linkage data for easements; it will be merged with the main dataset.
 program_links <- fread(
-  "/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/data/ken_data/Conservation Easment Data V3 Program Linkage.txt",
+  "data/Conservation Easment Data V3 Program Linkage.txt",
   sep = "\t", header = FALSE
 )
 
 # 'parcel_sales' contains sales transaction data for parcels (currently optional for merging).
 parcel_sales <- fread(
-  "/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/data/ken_data/Conservation Easment Data V3 Sales.txt",
+  "data/Conservation Easment Data V3 Sales.txt",
   sep = "\t", header = FALSE
 )
 
 # 'city_rate_data' holds city-level tax rate information for later financial analysis.
 city_rate_data <- fread(
-  "/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/data/ken_data/Conservation Easment Data V3 City Rate Data.txt",
+  "data/Conservation Easment Data V3 City Rate Data.txt",
   sep = "\t", header = FALSE
 )
 

@@ -91,7 +91,7 @@ beep()
 
 # ---- Load Additional Data for Spatial and Financial Analysis ----
 # 'ben_zonation' contains spatial ranking data used later for zoning or conservation prioritization.
-ben_zonation <- st_read("/Users/matthewhockert/Downloads/full_parcels_ranked_final_v1")
+#ben_zonation <- st_read("/Users/matthewhockert/Downloads/full_parcels_ranked_final_v1")
 
 # 'cpi' is used for inflation adjustments in financial calculations (e.g., deflating tax or property values).
 cpi <- read_excel("/Users/matthewhockert/Desktop/UMN/hennepin_conservation_easements/hcra_paper/cpi.xlsx")
